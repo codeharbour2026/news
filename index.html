@@ -4,7 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Daily Cricket News</title>
+
+<title>The Cricket Daily News</title>
 
 <style>
 * {
@@ -70,6 +71,13 @@ h1 {
     margin: 12px 0;
 }
 
+h2 {
+    font-size: 27px;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+
 .subtitle {
     font-size: 19px;
     color: #555;
@@ -96,22 +104,13 @@ h1 {
     line-height: 1.85;
 }
 
-.image-placeholder {
-    min-height: 230px;
+.article-image {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
     background: #e6e2d8;
-    border: 2px dashed #999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: #555;
-    text-align: center;
-    padding: 20px;
-}
-
-.image-placeholder span {
-    font-size: 40px;
-    margin-bottom: 10px;
 }
 
 .caption {
@@ -184,12 +183,19 @@ blockquote cite {
     .topline {
         font-size: 10px;
     }
+
+    .article-image {
+        height: 220px;
+    }
 }
 </style>
 </head>
 
 <body>
+
 <div class="newspaper">
+
+    <!-- NEWSPAPER HEADER -->
 
     <div class="topline">
         <span>THE DAILY NEWS</span>
@@ -197,13 +203,20 @@ blockquote cite {
     </div>
 
     <div class="masthead">THE CRICKET DAILY NEWS</div>
-    <div class="tagline">Reporting the stories that matter</div>
+
+    <div class="tagline">
+        Reporting the stories that matter
+    </div>
 
     <hr>
 
+    <!-- HEADLINE -->
+
     <div class="category">BREAKING SPORTS NEWS</div>
 
-    <h1>"WE COULDN'T BELIEVE IT!" — Unbelievable 0/170 Cricket Score!</h1>
+    <h1>
+        "WE COULDN'T BELIEVE IT!" — Unbelievable 0/170 Cricket Score!
+    </h1>
 
     <div class="subtitle">
         Two opening batsmen stun spectators with an extraordinary
@@ -214,18 +227,20 @@ blockquote cite {
         By Sports News Reporter &nbsp; | &nbsp; Saturday Sports Report
     </div>
 
-    <img src="image(5).jpg" alt="Cricket batsman playing a shot"
-     class="article-image">
+    <!-- MAIN IMAGE -->
 
-<div class="caption">
-    One of the opening batsmen plays a powerful shot
-    during the incredible 170-run partnership.
-</div>
-    </div>
+    <img
+        src="image(5).jpg"
+        alt="Cricket batsman playing a shot"
+        class="article-image"
+    >
+
     <div class="caption">
         Above: One of the opening batsmen plays a powerful shot
         during the incredible 170-run partnership at the SCG.
     </div>
+
+    <!-- LEAD PARAGRAPH -->
 
     <p class="lead">
         On Saturday afternoon, at the Sydney Cricket Ground (SCG),
@@ -239,6 +254,8 @@ blockquote cite {
 
     <hr>
 
+    <!-- FIRST ARTICLE SECTION -->
+
     <h2>An Extraordinary Batting Performance</h2>
 
     <p class="article">
@@ -251,36 +268,46 @@ blockquote cite {
         dominate the match from beginning to end.
     </p>
 
+    <!-- STATISTICS -->
+
     <div class="stats">
+
         <div class="stat">
             <strong>170</strong>
             <small>TOTAL RUNS</small>
         </div>
+
         <div class="stat">
             <strong>0</strong>
             <small>WICKETS LOST</small>
         </div>
+
         <div class="stat">
             <strong>20</strong>
             <small>OVERS PLAYED</small>
         </div>
+
         <div class="stat">
             <strong>170</strong>
             <small>RUN PARTNERSHIP</small>
         </div>
+
     </div>
 
-    <img src="image(4)jpg" alt="Cricket batsman playing a shot"
-     class="article-image">
+    <!-- SECOND IMAGE -->
 
-<div class="caption">
-    One of the opening batsmen plays a powerful shot
-    during the incredible 170-run partnership.
-</div>
+    <img
+        src="image(4).jpg"
+        alt="Two opening batsmen celebrating"
+        class="article-image"
+    >
+
     <div class="caption">
         Above: The two opening batsmen celebrate their remarkable
         partnership after scoring 170 runs without losing a wicket.
     </div>
+
+    <!-- SECOND ARTICLE SECTION -->
 
     <h2>The Crowd Goes Wild!</h2>
 
@@ -294,19 +321,32 @@ blockquote cite {
         fielding team frustrated and overwhelmed.
     </p>
 
+    <!-- AUDIENCE QUOTE -->
+
     <blockquote>
         "We couldn't believe what we were watching! They kept
         hitting boundaries, and it seemed like nothing could
         stop them. It was absolutely unbelievable!"
-        <cite>— An excited spectator who witnessed the match</cite>
+
+        <cite>
+            — An excited spectator who witnessed the match
+        </cite>
     </blockquote>
 
-    <img src="image(3)jpg" alt="Cricket batsman playing a shot"
-     class="article-image">
+    <!-- THIRD IMAGE -->
+
+    <img
+        src="image(3).jpg"
+        alt="Cricket spectators cheering"
+        class="article-image"
+    >
+
     <div class="caption">
         Above: Excited spectators cheer from the stands as the
         batsmen continue their incredible innings.
     </div>
+
+    <!-- FINAL ARTICLE SECTION -->
 
     <h2>An Unforgettable Achievement</h2>
 
@@ -326,12 +366,17 @@ blockquote cite {
         for years to come.
     </p>
 
+    <!-- FOOTER -->
+
     <div class="footer">
         THE DAILY NEWS &nbsp; | &nbsp; SPORTS REPORTING
+
         <br><br>
+
         END OF REPORT
     </div>
 
 </div>
+
 </body>
 </html>
