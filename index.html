@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Cricket News</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #e8e5de;
+    color: #222;
+    font-family: Georgia, serif;
+}
+
+.newspaper {
+    max-width: 1050px;
+    margin: 35px auto;
+    padding: 35px;
+    background: #fffdf6;
+    box-shadow: 0 4px 25px #0002;
+}
+
+.topline {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    font-size: 13px;
+    color: #555;
+}
+
+.masthead {
+    text-align: center;
+    font-size: clamp(35px, 7vw, 65px);
+    font-weight: bold;
+    letter-spacing: -3px;
+    margin: 20px 0 5px;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+hr {
+    border: none;
+    border-top: 3px solid #222;
+    margin: 18px 0;
+}
+
+.category {
+    color: #a52c22;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.08;
+    margin: 12px 0;
+}
+
+.subtitle {
+    font-size: 19px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.byline {
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    padding: 12px 0;
+    margin: 20px 0;
+    font-size: 13px;
+    color: #555;
+}
+
+.lead {
+    font-size: 20px;
+    line-height: 1.65;
+    font-weight: bold;
+}
+
+.article {
+    font-size: 17px;
+    line-height: 1.85;
+}
+
+.image-placeholder {
+    min-height: 230px;
+    background: #e6e2d8;
+    border: 2px dashed #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #555;
+    text-align: center;
+    padding: 20px;
+}
+
+.image-placeholder span {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.caption {
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 8px 0 22px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.stat {
+    background: #f0ede5;
+    padding: 18px 8px;
+    text-align: center;
+}
+
+.stat strong {
+    display: block;
+    font-size: 27px;
+    color: #a52c22;
+}
+
+.stat small {
+    font-size: 12px;
+}
+
+blockquote {
+    border-left: 5px solid #a52c22;
+    padding: 15px 20px;
+    margin: 25px 0;
+    background: #f3f0e9;
+    font-size: 21px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+blockquote cite {
+    display: block;
+    font-size: 13px;
+    margin-top: 12px;
+    font-style: normal;
+}
+
+.footer {
+    border-top: 3px solid #222;
+    margin-top: 35px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .newspaper {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .topline {
+        font-size: 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="newspaper">
+
+    <div class="topline">
+        <span>THE DAILY CRICKET NEWS</span>
+        <span>SPORTS EDITION</span>
+    </div>
+
+    <div class="masthead">THE DAILY NEWS</div>
+    <div class="tagline">Reporting the stories that matter</div>
+
+    <hr>
+
+    <div class="category">BREAKING SPORTS NEWS</div>
+
+    <h1>"WE COULDN'T BELIEVE IT!" — Unbelievable 0/170 Cricket Score!</h1>
+
+    <div class="subtitle">
+        Two opening batsmen stun spectators with an extraordinary
+        unbeaten partnership at the Sydney Cricket Ground.
+    </div>
+
+    <div class="byline">
+        By Sports News Reporter &nbsp; | &nbsp; Saturday Sports Report
+    </div>
+
+    <div class="image-placeholder">
+        <span>📷</span>
+        <strong>IMAGE PLACEHOLDER 1</strong>
+        Main photograph: A cricket batsman hitting a powerful shot
+        during the match.
+    </div>
+    <div class="caption">
+        Above: One of the opening batsmen plays a powerful shot
+        during the incredible 170-run partnership at the SCG.
+    </div>
+
+    <p class="lead">
+        On Saturday afternoon, at the Sydney Cricket Ground (SCG),
+        two opening batsmen and their cricket team scored an
+        incredible 170 runs without losing a single wicket.
+        The unbelievable performance amazed spectators, shocked
+        the opposing team and helped their side secure a memorable
+        victory. Hundreds of fans gathered to watch what became
+        an extraordinary cricket match.
+    </p>
+
+    <hr>
+
+    <h2>An Extraordinary Batting Performance</h2>
+
+    <p class="article">
+        The two opening batsmen delivered an outstanding performance,
+        scoring a combined total of 170 runs in just 20 overs.
+        The first batsman scored an impressive 95 runs, while the
+        second contributed 75 runs. Remarkably, neither player was
+        dismissed throughout the entire innings. Their excellent
+        teamwork, powerful shots and clever batting helped them
+        dominate the match from beginning to end.
+    </p>
+
+    <div class="stats">
+        <div class="stat">
+            <strong>170</strong>
+            <small>TOTAL RUNS</small>
+        </div>
+        <div class="stat">
+            <strong>0</strong>
+            <small>WICKETS LOST</small>
+        </div>
+        <div class="stat">
+            <strong>20</strong>
+            <small>OVERS PLAYED</small>
+        </div>
+        <div class="stat">
+            <strong>170</strong>
+            <small>RUN PARTNERSHIP</small>
+        </div>
+    </div>
+
+    <div class="image-placeholder">
+        <span>📷</span>
+        <strong>IMAGE PLACEHOLDER 2</strong>
+        Photograph of the two opening batsmen standing together
+        on the cricket pitch.
+    </div>
+    <div class="caption">
+        Above: The two opening batsmen celebrate their remarkable
+        partnership after scoring 170 runs without losing a wicket.
+    </div>
+
+    <h2>The Crowd Goes Wild!</h2>
+
+    <p class="article">
+        As the score continued to rise, the crowd erupted into
+        cheers and applause. Spectators watched in disbelief as
+        the batsmen smashed boundaries and raced between the
+        wickets. The opposing team's bowlers tried several
+        different techniques to take a wicket, but nothing seemed
+        to work. Every attempt was unsuccessful, leaving the
+        fielding team frustrated and overwhelmed.
+    </p>
+
+    <blockquote>
+        "We couldn't believe what we were watching! They kept
+        hitting boundaries, and it seemed like nothing could
+        stop them. It was absolutely unbelievable!"
+        <cite>— An excited spectator who witnessed the match</cite>
+    </blockquote>
+
+    <div class="image-placeholder">
+        <span>📷</span>
+        <strong>IMAGE PLACEHOLDER 3</strong>
+        Photograph of spectators cheering and celebrating
+        in the stands.
+    </div>
+    <div class="caption">
+        Above: Excited spectators cheer from the stands as the
+        batsmen continue their incredible innings.
+    </div>
+
+    <h2>An Unforgettable Achievement</h2>
+
+    <p class="article">
+        As the final runs were scored, the stadium burst into
+        celebration. Supporters waved their flags, cheered loudly
+        and congratulated the players on their extraordinary
+        achievement. The two batsmen shook hands proudly, knowing
+        they had produced an unforgettable performance.
+    </p>
+
+    <p class="article">
+        The remarkable 170-run partnership demonstrated the
+        importance of teamwork, determination and skill.
+        The unbelievable innings left spectators speechless
+        and gave cricket fans a match they would remember
+        for years to come.
+    </p>
+
+    <div class="footer">
+        THE DAILY NEWS &nbsp; | &nbsp; SPORTS REPORTING
+        <br><br>
+        END OF REPORT
+    </div>
+
+</div>
+</body>
+</html>
